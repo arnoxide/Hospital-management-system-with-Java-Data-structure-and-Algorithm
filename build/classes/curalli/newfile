@@ -1,0 +1,47 @@
+//        Patient p1= new Patient("22","Arnold","000000");
+//        Patient p2= new Patient("23","Vhutali","123457");
+//        Patient p3= new Patient("24","Masutha","123458");
+      
+        
+//        PatientList plist= new PatientList();
+//        plist.Insert(p1);
+//        plist.Insert(p2);
+//        plist.Insert(p3);
+        
+          
+        Doctor d1= new Doctor("25","Arnold","000000","Eyes",600);
+        Doctor d2= new Doctor("26","Orifha","11111","Gynacaelogist",700);
+        Doctor d3= new Doctor("27","Fhulu","22222","physio",800);
+        
+        DoctorsList dl = new DoctorsList();
+        dl.Insert(d1);
+        dl.Insert(d2);
+        dl.Insert(d3);
+
+        dl.AllDoctorInfo();
+        //System.out.println(dlist.searchByID("25").getName()+"   "+dlist.searchByID("25").getContact()+ "  "+ dlist.searchByID("25").getFees()+ "   "+ dlist.searchByID("25").getSpecialty());
+ CheckupList cul = new CheckupList();
+        
+        Checkup c1 = new Checkup(d1,p1,3,"A","55");
+        
+        Checkup c2 = new Checkup(d1,p1,2,"B","55");
+         
+         Checkup c3 = new Checkup(d1,p1,3,"C","55");
+          
+         Checkup c4 = new Checkup(d1,p1,1,"D","55"); 
+          
+         Checkup c5 = new Checkup(d1,p1,2,"E","55");
+         
+         Checkup c6 = new Checkup(d1,p1,3,"F","55");
+         
+         Checkup c7 = new Checkup(d1,p1,3,"G","55");
+         
+         cul.Enqueue(c1);
+         cul.Enqueue(c2);
+         cul.Enqueue(c3);
+         cul.Enqueue(c4);
+         cul.Enqueue(c5);
+         cul.Enqueue(c6);
+         cul.Enqueue(c7);
+         
+         cul.Print();
